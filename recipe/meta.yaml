@@ -1,5 +1,5 @@
 {% set name = "free-proxy" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/free_proxy-{{ version }}.tar.gz
-  sha256: 2b20eb863972b42984292cee17132f4c9ddb8fef0a9bee9bc15215a08e6899fb
+  sha256: f7c361d3b6c82918ab845163c46ea574e6bd4ce54b1342e89804aaf07e53b848
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
