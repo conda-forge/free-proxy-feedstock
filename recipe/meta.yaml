@@ -1,13 +1,13 @@
 {% set name = "free-proxy" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/free_proxy-{{ version }}.tar.gz
-  sha256: 5d6e228f7a513755d1f30064ddff74014b56817ed9bcbbea60d4229651ccc816
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/free_proxy-{{ version }}.tar.gz
+  sha256: 292627d8f414d2b424f44e68d1756436a696e4312cde776bceb08cbc569271c6
 
 build:
   number: 0
