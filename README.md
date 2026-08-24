@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `free-proxy` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install free-proxy
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install free-proxy
 ```
 
-It is possible to list all of the versions of `free-proxy` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add free-proxy
+# for installing globally
+pixi global install free-proxy
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `free-proxy` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search free-proxy --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search free-proxy --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search free-proxy --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds free-proxy --channel conda-forge
 # List dependencies of `free-proxy`:
 mamba repoquery depends free-proxy --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
